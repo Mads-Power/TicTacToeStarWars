@@ -4,13 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mads_power.tictactoestarwars.MainActivity">
+    tools:context="com.example.mads_power.tictactoestarwars.MainActivity"
+    android:background="@drawable/DarthBcGround">
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="89dp" />
+        android:id="@+id/singlePlayerId"
+        android:layout_width="147dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/empirevsReb"
+        android:text="SinglePlayer"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/Play_With_FriendsId"
+        android:layout_width="155dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/empirevsReb"
+        android:text="Play With Friends"
+        android:textColor="@color/white"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/multiPlayerId"
+        android:layout_width="136dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/empirevsReb"
+        android:text="Multiplayer"
+        android:textColor="@color/white"
+
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Play_With_FriendsId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singlePlayerId"
+        app:layout_constraintVertical_bias="0.656" />
 </android.support.constraint.ConstraintLayout>
